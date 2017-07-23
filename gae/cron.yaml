@@ -1,0 +1,6 @@
+cron:
+- description: "weekday morning job"
+  url: /vm/start
+  schedule: every mon,tue,wed,thu,fri,sat 06:00
+  timezone: Japan
+

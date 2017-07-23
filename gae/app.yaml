@@ -1,0 +1,22 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /google*****.html
+  static_files: google*****.html
+  upload: google******.html
+
+- url: /vm/start
+  script: main.app
+  login: admin
+
+- url: /.*
+  script: main.app
+
+env_variables:
+  ZONE: 'asia-northeast1-a'
+  INST: 'INSTANCE NAME'
+  PROJ: 'PROJECT ID'
+  TOAD: 'RECIPIENT_MAILADDRESS'
+  FRAD: 'SENDER_MAILADDRESS'
