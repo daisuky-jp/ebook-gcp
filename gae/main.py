@@ -26,7 +26,7 @@ def hello():
 def start_vm():
     """Start VM instance"""
     credentials = AppAssertionCredentials(scope='https://www.googleapis.com/auth/compute')
-    http = credentials.authorize(httplib2.Http(memcache))
+    http = credentials.authorize(httplib2.Http())
     compute = discovery.build('compute','v1',http=http)
     # Start the VM!
     zone = os.environ.get('ZONE')
